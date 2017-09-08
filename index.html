@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta chartset="utf-8">
+	<title>亿借到</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	 <!--优先使用 IE 最新版本和 Chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!--禁止百度SiteApp转码-->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="wrap">
+	 <div class="logo"></div>
+		<div class="form-wrap">
+			<div class="title">
+				申请贷款
+			</div>
+			<div class="input-wrap">
+				<input type="tel" placeholder="请输入联系电话">
+			</div>
+			<div class="input-wrap">
+				<input type="number" placeholder="请输入贷款金额">
+				<span class="yuan">元</span>
+			</div>
+			<div class="apply-btn">
+				<a href="javascript:;" class="apply-now">马上申请</a>
+			</div>
+		</div>
+		<ul class="list-wrap">
+			<li class="clearfix">
+				<i class="icon01 fl"></i>
+				<div class="text-con fr">
+					<span>贷款速度快</span>
+					<span>1分钟申请，快至30分钟放款</span>
+				</div>
+			</li>
+			<li class="clearfix">
+				<i class="icon02 fl"></i>
+				<div class="text-con fr">
+					<span>额度范围广</span>
+					<span>500-20000，超低利率任意申请</span>
+				</div>
+			</li>
+			<li class="clearfix">
+				<i class="icon03 fl"></i>
+				<div class="text-con fr">
+					<span>安全保障</span>
+					<span>信息密封保护，安全无忧</span>
+				</div>
+			</li>
+		</ul>
+		<div class="foot">
+			<span>某某某某某某公司版权信息  备案信息</span>
+		</div>
+	</div>
+<!-- 弹出框 -->
+	<div class="alert-wrap">
+		<div class="alert">
+			<div class="alert-head">
+				恭喜您 申请成功！
+				<span class="alert-close">×</span>
+				<span class="gold"></span>
+			</div>
+			<div class="alert-con">
+				<span class="first">额度审核中，请保持手机通讯正常</span>
+				<span>如需加快审核进度，</span>
+				<span>请加QQ:<i>1226078833</i></span>
+			</div>
+			<a class="alert-btn" href="javascript:;">朕知道了</a>
+		</div>
+	</div>
+	
+</body>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+$(function(){
+	$(".apply-now").on("click",function(){
+		$(".alert-wrap").show();
+	});
+	$(".alert-close").on("touchstart",function(){
+		$(".alert-wrap").hide();
+	});
+	$(".alert-btn").on("click",function(){
+		$(".alert-wrap").hide();
+	});
+})
+	
+		
+
+</script>
+</html>
